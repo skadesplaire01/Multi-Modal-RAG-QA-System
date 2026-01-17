@@ -61,7 +61,7 @@ multi_modal_rag_qatar/
 ├── requirements.txt
 └── README.md
 
----
+```
 
 ## ⚙️ Installation (Windows)
 
