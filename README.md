@@ -66,32 +66,23 @@ multi_modal_rag_qatar/
 ## ⚙️ Installation (Windows)
 
 ### 1️⃣ Install Python packages
-```powershell
-python -m pip install -r requirements.txt
+powershell
+python -m pip install -r requirements.txt.
 
-2️⃣ Install Tesseract OCR (for OCR support)
-
-Make sure Tesseract is installed and this path exists:
-
-C:\Program Files\Tesseract-OCR\tesseract.exe
+## 2️⃣ Install Tesseract OCR (for OCR support)
+Make sure **Tesseract OCR** is installed and this path exists: C:\Program Files\Tesseract-OCR\tesseract.exe
 
 
-If needed, update the path in:
+---
 
-src/ingestion/pdf_images_ocr.py
-
-▶️ Run the Application
+## ▶️ Run the Application
 
 Start Streamlit:
-
+powershell
 python -m streamlit run app.py
+opern in browser : http://localhost:8501
 
-
-Open in browser:
-
-http://localhost:8501
-
-🚀 First Time Setup
+### 🚀 First Time Setup
 
 Click:
 
@@ -99,42 +90,46 @@ Click:
 
 This will:
 
-ingest PDF (text + tables + OCR)
-
-chunk extracted content
-
-embed chunks
-
-build the FAISS vector index
-
+Ingest PDF (text + tables + OCR)
+Chunk extracted content
+Create embeddings
+Build the FAISS vector index
 After indexing, you can ask unlimited questions without rebuilding.
 
-💬 Example Questions
-Text-based
-
+## 💬 Example Questions
+✅ Text-based
 What does the report say about inflation trends in Qatar?
-
 What are the major risks highlighted in the report?
 
-Table-based
-
+✅ Table-based
 What is the CPI inflation in 2022, 2023 and projected for 2024?
-
 What are the values of Real GDP growth from 2021 to 2025?
 
-Image/OCR-based
-
+✅ Image/OCR-based
 What does Figure 2 indicate about inflation and monetary policy?
 
 📊 Run Evaluation Suite
 python src/evaluation/run_eval.py
+---
 
-✅ Output Format
-
+### Output Format
 The system provides:
 
 ✅ Final answer (evidence-based)
-
 ✅ Source pages (citations)
-
 ✅ Retrieved evidence chunks for transparency
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
