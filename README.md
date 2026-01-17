@@ -76,9 +76,7 @@ Make sure **Tesseract OCR** is installed and this path exists: C:\Program Files\
 ```
 
 #### ▶️ Run the Application
-```
-Start Streamlit:
-powershell
+```powershell
 python -m streamlit run app.py
 ```
 #### open in browser : http://localhost:8501
