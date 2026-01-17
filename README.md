@@ -65,25 +65,26 @@ multi_modal_rag_qatar/
 
 ## ⚙️ Installation (Windows)
 
-### 1️⃣ Install Python packages
-powershell
+#### 1️⃣ Install Python packages
+``` powershell
 python -m pip install -r requirements.txt.
+```
 
-### 2️⃣ Install Tesseract OCR (for OCR support)
-Make sure **Tesseract OCR** is installed and this path exists: C:\Program Files\Tesseract-OCR\tesseract.exe
+#### 2️⃣ Install Tesseract OCR (for OCR support)
+``` Make sure **Tesseract OCR** is installed and this path exists: C:\Program Files\Tesseract-OCR\tesseract.exe
+```
 
-### ▶️ Run the Application
-
+#### ▶️ Run the Application
+```
 Start Streamlit:
 powershell
 python -m streamlit run app.py
+```
 opern in browser : http://localhost:8501
 ---
 ### 🚀 First Time Setup
 
-Click:
-
-✅ Build / Rebuild Index
+Click: ✅ Build / Rebuild Index
 
 This will:
 
