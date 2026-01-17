@@ -80,7 +80,7 @@ Start Streamlit:
 powershell
 python -m streamlit run app.py
 ```
-opern in browser : http://localhost:8501
+#### open in browser : http://localhost:8501
 ---
 ### 🚀 First Time Setup
 
