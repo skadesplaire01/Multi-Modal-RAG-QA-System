@@ -69,19 +69,16 @@ multi_modal_rag_qatar/
 powershell
 python -m pip install -r requirements.txt.
 
-## 2️⃣ Install Tesseract OCR (for OCR support)
+### 2️⃣ Install Tesseract OCR (for OCR support)
 Make sure **Tesseract OCR** is installed and this path exists: C:\Program Files\Tesseract-OCR\tesseract.exe
 
-
----
-
-## ▶️ Run the Application
+### ▶️ Run the Application
 
 Start Streamlit:
 powershell
 python -m streamlit run app.py
 opern in browser : http://localhost:8501
-
+---
 ### 🚀 First Time Setup
 
 Click:
@@ -112,7 +109,7 @@ What does Figure 2 indicate about inflation and monetary policy?
 python src/evaluation/run_eval.py
 ---
 
-### Output Format
+## Output Format
 The system provides:
 
 ✅ Final answer (evidence-based)
