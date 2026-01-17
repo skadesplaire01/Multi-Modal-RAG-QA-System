@@ -1,0 +1,12 @@
+streamlit
+pymupdf
+pdfplumber
+pytesseract
+Pillow
+sentence-transformers
+faiss-cpu
+numpy
+pandas
+tqdm
+python-dotenv
+scikit-learn
