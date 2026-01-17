@@ -164,9 +164,6 @@ query = st.text_input(
 
 ask_clicked = st.button("🔍 Ask", use_container_width=True)
 
-# -------------------------
-# Answer + Evidence
-# -------------------------
 if ask_clicked:
     vs = VectorStore(store_dir=STORE_DIR)
     if not vs.exists():
