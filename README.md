@@ -1,1 +1,1 @@
-# -Multi-Modal-RAG-QA-System
+# Multi-Modal-RAG-QA-System
