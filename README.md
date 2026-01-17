@@ -71,7 +71,8 @@ python -m pip install -r requirements.txt.
 ```
 
 #### 2️⃣ Install Tesseract OCR (for OCR support)
-``` Make sure **Tesseract OCR** is installed and this path exists: C:\Program Files\Tesseract-OCR\tesseract.exe
+```powershell
+Make sure **Tesseract OCR** is installed and this path exists: C:\Program Files\Tesseract-OCR\tesseract.exe
 ```
 
 #### ▶️ Run the Application
