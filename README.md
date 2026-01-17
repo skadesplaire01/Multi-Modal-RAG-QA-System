@@ -26,73 +26,88 @@ The pipeline supports **text + tables + OCR (images/charts)** ingestion and prov
 multi_modal_rag_qatar/
 │
 ├── data/
-│   └── qatar_test_doc.pdf
+│ └── qatar_test_doc.pdf
 │
 ├── src/
-│   ├── ingestion/
-│   │   ├── pdf_text.py
-│   │   ├── pdf_tables.py
-│   │   ├── pdf_images_ocr.py
-│   │   └── ingest_pipeline.py
-│   │
-│   ├── processing/
-│   │   ├── cleaning.py
-│   │   └── chunking.py
-│   │
-│   ├── retrieval/
-│   │   ├── embedder.py
-│   │   ├── vector_store.py
-│   │   ├── retriever.py
-│   │   ├── reranker.py
-│   │   └── hybrid_rrf.py
-│   │
-│   ├── llm/
-│   │   └── answer_generator.py
-│   │
-│   ├── evaluation/
-│   │   ├── eval_questions.json
-│   │   └── run_eval.py
-│   │
-│   └── utils/
-│       └── logger.py
+│ ├── ingestion/
+│ │ ├── pdf_text.py
+│ │ ├── pdf_tables.py
+│ │ ├── pdf_images_ocr.py
+│ │ └── ingest_pipeline.py
+│ │
+│ ├── processing/
+│ │ ├── cleaning.py
+│ │ └── chunking.py
+│ │
+│ ├── retrieval/
+│ │ ├── embedder.py
+│ │ ├── vector_store.py
+│ │ ├── retriever.py
+│ │ ├── reranker.py
+│ │ └── hybrid_rrf.py
+│ │
+│ ├── llm/
+│ │ └── answer_generator.py
+│ │
+│ ├── evaluation/
+│ │ ├── eval_questions.json
+│ │ └── run_eval.py
+│ │
+│ └── utils/
+│ └── logger.py
 │
 ├── app.py
 ├── requirements.txt
 └── README.md
 
-⚙️ Installation (Windows)
-1️⃣ Install Python packages
+
+---
+
+## ⚙️ Installation (Windows)
+
+### 1️⃣ Install Python packages
+```powershell
 python -m pip install -r requirements.txt
 
-2️⃣ Install Tesseract OCR (for image OCR)
+2️⃣ Install Tesseract OCR (for OCR support)
 
-Install Tesseract and ensure this path exists:
+Make sure Tesseract is installed and this path exists:
 
 C:\Program Files\Tesseract-OCR\tesseract.exe
 
 
-If needed, update in:
+If needed, update the path in:
 
 src/ingestion/pdf_images_ocr.py
 
 ▶️ Run the Application
 
-Start Streamlit app:
+Start Streamlit:
 
 python -m streamlit run app.py
 
 
-Then open:
+Open in browser:
 
 http://localhost:8501
 
-✅ First Time Setup
+🚀 First Time Setup
 
 Click:
-✅ Build / Rebuild Index
-This will ingest the PDF, chunk it, embed it, and build the FAISS index.
 
-After the index is built, you can ask unlimited questions.
+✅ Build / Rebuild Index
+
+This will:
+
+ingest PDF (text + tables + OCR)
+
+chunk extracted content
+
+embed chunks
+
+build the FAISS vector index
+
+After indexing, you can ask unlimited questions without rebuilding.
 
 💬 Example Questions
 Text-based
@@ -109,13 +124,17 @@ What are the values of Real GDP growth from 2021 to 2025?
 
 Image/OCR-based
 
-What does Figure 2 indicate about inflation and monetary policy? 
+What does Figure 2 indicate about inflation and monetary policy?
 
-✅ Outputs
+📊 Run Evaluation Suite
+python src/evaluation/run_eval.py
+
+✅ Output Format
 
 The system provides:
 
-- Final answer (based on retrieved context)
-- Sources (page numbers)
-- Retrieved evidence chunks for transparency
+✅ Final answer (evidence-based)
 
+✅ Source pages (citations)
+
+✅ Retrieved evidence chunks for transparency
