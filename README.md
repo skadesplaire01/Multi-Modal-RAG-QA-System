@@ -1,34 +1,28 @@
+# 📄 Multi-Modal RAG QA System (Qatar Test Document)
 
-📄 Multi-Modal RAG QA System (Qatar Test Document)
+A **Multi-Modal Retrieval-Augmented Generation (RAG)** system that answers user questions from a complex PDF document (Qatar IMF report).  
+The pipeline supports **text + tables + OCR (images/charts)** ingestion and provides **page-level citations** with retrieved evidence.
 
-A Multi-Modal Retrieval-Augmented Generation (RAG) system that answers user questions from a complex PDF document (Qatar IMF report).
-The pipeline supports text + tables + OCR (images/charts) ingestion and provides page-level citations with retrieved evidence.
+---
 
-✅ Key Features
+## ✅ Key Features
 
-✅ Multi-modal ingestion
+- ✅ **Multi-modal ingestion**
+  - Text extraction from PDF pages
+  - Table extraction and conversion to readable text
+  - OCR extraction from images inside PDF using Tesseract
+- ✅ **Chunking strategy** for better retrieval
+- ✅ **Vector search using FAISS**
+- ✅ **Top-K retrieval** to fetch relevant chunks
+- ✅ **Reranker (Bonus)** using CrossEncoder for higher relevance
+- ✅ **Streamlit UI** for interactive QA
+- ✅ **Source attribution** (page citations + retrieved evidence)
+- ✅ **Evaluation suite** with benchmark queries
 
-Text extraction from PDF pages
+---
 
-Table extraction and conversion to readable text
+## 📁 Project Structure
 
-OCR extraction from images inside PDF using Tesseract
-
-✅ Smart chunking for better retrieval
-
-✅ Vector search using FAISS
-
-✅ Top-K retrieval to fetch best matching content
-
-✅ Reranker (Bonus) using CrossEncoder for higher accuracy
-
-✅ Streamlit UI for interactive QA
-
-✅ Evidence display + page citations for transparency
-
-✅ Evaluation suite with sample benchmark queries
-
-📁 Project Structure
 multi_modal_rag_qatar/
 │
 ├── data/
