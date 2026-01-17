@@ -4,6 +4,7 @@ A **Multi-Modal Retrieval-Augmented Generation (RAG)** system that answers user 
 The pipeline supports **text + tables + OCR (images/charts)** ingestion and provides **page-level citations** with retrieved evidence.
 
 ---
+## Live Demo - https://multi-modal-rag-app-system-fciqs3fypnankzbhsjn3nj.streamlit.app/
 
 ## Key Features
 
