@@ -5,7 +5,7 @@ The pipeline supports **text + tables + OCR (images/charts)** ingestion and prov
 
 ---
 
-## ✅ Key Features
+## Key Features
 
 - ✅ **Multi-modal ingestion**
   - Text extraction from PDF pages
