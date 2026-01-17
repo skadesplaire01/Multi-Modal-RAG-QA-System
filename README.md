@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 📄 Multi-Modal RAG QA System (Qatar Test Document)
 
 A Multi-Modal Retrieval-Augmented Generation (RAG) system that answers user questions from a complex PDF document (Qatar IMF report).
