@@ -21,7 +21,11 @@ The pipeline supports **text + tables + OCR (images/charts)** ingestion and prov
 - ✅ **Evaluation suite** with benchmark queries
 
 ---
-
+### Screenshots 
+<img width="1366" height="642" alt="image" src="https://github.com/user-attachments/assets/1918f252-f5e0-420a-baef-8fab7515dbb2" />
+<img width="1363" height="576" alt="image" src="https://github.com/user-attachments/assets/981479f4-e57f-4cb3-aac9-909f39b56199" />
+<img width="1361" height="644" alt="image" src="https://github.com/user-attachments/assets/8eb84300-ac86-40b2-9f35-53880eac0d2f" />
+---
 ## 📁 Project Structure
 
 ```text
